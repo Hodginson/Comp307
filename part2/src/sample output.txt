@@ -1,0 +1,56 @@
+2 categories
+16 attributes
+Read 100 instances
+ FEMALE = True:
+    Class live, probability = 1.00
+ FEMALE = False:
+    SGOT = True:
+       BILIRUBIN = True:
+          FATIGUE = True:
+             Class live, probability = 1.00
+          FATIGUE = False:
+             ANTIVIRALS = True:
+                HISTOLOGY = True:
+                   BIGLIVER = True:
+                      AGE = True:
+                         ANOREXIA = True:
+                            Class die, probability = 1.00
+                         ANOREXIA = False:
+                            Class live, probability = 1.00
+                      AGE = False:
+                         SPLEENPALPABLE = True:
+                            ASCITES = True:
+                               Class live, probability = 1.00
+                            ASCITES = False:
+                               STEROID = True:
+                                  Class die, probability = 1.00
+                               STEROID = False:
+                                  FIRMLIVER = True:
+                                     Class live, probability = 1.00
+                                  FIRMLIVER = False:
+                                     Class die, probability = 1.00
+                         SPLEENPALPABLE = False:
+                            Class die, probability = 1.00
+                   BIGLIVER = False:
+                      Class live, probability = 1.00
+                HISTOLOGY = False:
+                   SPIDERS = True:
+                      Class live, probability = 1.00
+                   SPIDERS = False:
+                      Class die, probability = 1.00
+             ANTIVIRALS = False:
+                Class live, probability = 1.00
+       BILIRUBIN = False:
+          Class live, probability = 1.00
+    SGOT = False:
+       MALAISE = True:
+          VARICES = True:
+             Class live, probability = 0.94
+          VARICES = False:
+             Class die, probability = 1.00
+       MALAISE = False:
+          Class live, probability = 0.54
+Read 37 instances
+
+Number Correct: 34 /37
+Accuracy: 91.89%
